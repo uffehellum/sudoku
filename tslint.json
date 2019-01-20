@@ -1,0 +1,16 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "project": "package.json",
+    "rules": {
+        "arrow-parens": false,
+        "member-access": false,
+        "no-console": [true, "dir"],
+        "semicolon": [true, "never"],
+        "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"]
+    },
+    "rulesDirectory": []
+}

@@ -1,25 +1,35 @@
-:local(.div) {
-  height: 100px;
-  width: 100px;
-  font-size: 90px;
-}
-
 .big {
   border: 1px black solid;
-  display: block;
+  display: inline-block;
+  position: relative;
   height: 100px;
   width: 100px;
 }
 
 .bignum {
   position: absolute;
+  left: 0px;
+  top: 0px; 
   width: 100px;
   height: 100px;
-  font-size: 90px;
+  font-size: 80px;
   text-align: center;
-  vertical-align: middle;
+  display: table;
+  vertical-align: top;
 }
 
+.clickables {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+}
+
+.clickables a {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+}
 .big .touch {
   display: block;
   height: 45px;

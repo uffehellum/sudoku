@@ -5,7 +5,9 @@ import { IBig, IBigs } from "../model/IAppModel"
 import { ISelectBigPayload } from "./ISelectBigPayload"
 
 export function reduceBig(old: IBig, n: number): IBig {
-  return { ...old, bigNum: n }
+  const x = { ...old }
+  x.bigNum = x.bigNum === n ? undefined : n
+  return x
 }
 
 export function reduceBigs(old: IBigs, k: number, v: number): IBigs {
